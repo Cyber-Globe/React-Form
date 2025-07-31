@@ -6,13 +6,15 @@ function App() {
   function signUp(formData) {
     const email = formData.get("email");
     const password = formData.get("password");
+    // Here you would typically handle the form submission, e.g., send data to a server
+    // For demonstration, we will just log the values to the console
     console.log(`Password : ${password} Email : ${email}`);
   }
 
   return (
     <section>
       <h1>Signup form</h1>
-      <form onSubmit={signUp}>
+      <form action={signUp}>
         <label htmlFor="email">Email:</label>
         <input
           id="email"
