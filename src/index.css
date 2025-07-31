@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 10px;
-  background-color: #2dd4bf;
+  background-color: #353535ff;
   color: #262626;
 }
 
@@ -34,14 +34,14 @@ label {
 
 input {
   border-radius: 100px;
-  border: 1px solid #0d9488;
+  border: 1px solid #3131316e;
   height: 2rem;
   text-indent: 10px;
 }
 
 button {
   border-radius: 100px;
-  border: 1px solid #0d9488;
+  border: 1px solid #5e5e5eff;
   padding: 10px 30px;
   cursor: pointer;
   margin-top: 10px;
@@ -49,7 +49,7 @@ button {
 }
 
 button:hover {
-  background-color: #115e59;
-  border-color: #042f2e;
+  background-color: #181818ff;
+  border-color: #cacacaff;
   color: white;
 }

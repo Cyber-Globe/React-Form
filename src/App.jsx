@@ -27,7 +27,13 @@ function App() {
         <label htmlFor="password">Password:</label>
         <input id="password" type="password" name="password" />
         <br />
-
+        <label htmlFor="description">Description</label>
+        <textarea
+          name="description"
+          id="description"
+          rows="10"
+          cols="5"
+        ></textarea>
         <button>Submit</button>
       </form>
     </section>
