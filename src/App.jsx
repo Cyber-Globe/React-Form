@@ -3,21 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 function App() {
-  function handleSubmit(event) {
-    event.preventDefault();
-    const formEl = event.target;
-    const formData = new FormData(formEl);
+  function signUp(formData) {
     const email = formData.get("email");
     const password = formData.get("password");
-    console.log(
-      `Submitted Email: ${email} and Password: ${password} for brain Tech Company`
-    );
+    console.log(`Password : ${password} Email : ${email}`);
   }
 
   return (
     <section>
       <h1>Signup form</h1>
-      <form onSubmit={handleSubmit} method="POST" action="/signup">
+      <form onSubmit={signUp}>
         <label htmlFor="email">Email:</label>
         <input
           id="email"
